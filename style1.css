@@ -1,0 +1,82 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0;
+}
+body {
+	color: #000000;
+	font-size: 16px;
+	line-height: 1.3;
+	font-family: Arial, Helyetica, sans-serif;
+	background-color: #75a3a3;
+}
+.container {
+   
+    max-width:80%;
+	margin: 30px auto;
+}
+.box {
+	padding: 10px 0;
+	border-bottom: 2px solid #333;
+
+}
+.box:last-child{
+	border-bottom: none;
+}
+.main-title{
+	font-size:  26px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.main-subtitle {
+    font-size: 20px;
+}
+.box-info {
+    text-align: right;  /*вирівнювання тексту по правій стороні*/
+    font-size: 18px;
+}
+.info-item {
+    display: block;  /*елемент на всю ширину*/
+}
+.info-mail {
+    color: #1a1a00;   
+}
+.info-tel {
+    color: #333;      
+    text-decoration: none;      /*прибираємо підкреслення для ссилки*/
+}
+.info-link {
+    color: #333;      
+    text-decoration: none;      /*прибираємо підкреслення для ссилки*/
+    font-weight: 700;
+}
+.section {
+    margin-bottom: 20px;   /*відступ знизу*/
+    display: flex;     /*вирівнювання для того щоб заголовки зліва, текст справа*/
+}
+.section__title {
+    width: 20%;     /*елемент займає 20% ширини батьківського елементу*/
+    font-size: 20px;
+    font-weight: 700; /*товщина шрифта*/
+    text-align: right;
+    text-transform: uppercase;
+}	
+.section__content {
+    width: 80%;
+    padding-left: 30px;
+}
+.header-box {
+    display: flex;
+    justify-content: space-between;   /*елемнти розміщені зліва і справа контейнера*/
+    align-items: center;  /*вертикально вирівняні по центру*/
+}
+.avatar-wrapper {
+    width: 170px;
+    height: 170px;
+    overflow: hidden;    /*обрізає все що поза 100х100*/
+    border-radius: 70%;   /*округлення*/
+}
+.avatar {
+    max-width: 100%;   /* максимальна ширина =ширині контейнера*/
+    height: auto;   /*щоб не деформувалась*/
+}
